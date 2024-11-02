@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="bg-[#3b4664]">
+        <div class="flex justify-center items-center h-[700px]">
+            <div class="w-[20%] h-[400px] ">
+                <div
+                    class="w-full h-[100px] p-5 bg-[#191f32] rounded-2xl text-white text-3xl flex justify-end items-center">
+                    <h1 id="outputValue">0</h1>
+                </div>
+                <div class="border p-5 mt-5">
+                    <div class="grid grid-cols-4 gap-5 ">
+                        <div onclick="appendNumber(7)" class="cursor-pointer bg-white rounded-lg flex justify-center items-center text-xl h-[6vh] font-bold">
+                            <p>7</p>
+                        </div>
+                        <div onclick="appendNumber(8)" class="cursor-pointer bg-white rounded-lg flex justify-center items-center text-xl h-[6vh] font-bold">
+                            <p>8</p>
+                        </div>
+                        <div onclick="appendNumber(9)" class="cursor-pointer bg-white rounded-lg flex justify-center items-center text-xl h-[6vh] font-bold">
+                            <p>9</p>
+                        </div>
+                        <div onclick="deleteLast()" class="cursor-pointer bg-white rounded-lg flex justify-center items-center text-xl h-[6vh] font-bold">
+                            <p>DEL</p>
+                        </div>
+                        <div onclick="appendNumber(4)" class="cursor-pointer bg-white rounded-lg flex justify-center items-center text-xl h-[6vh] font-bold">
+                            <p>4</p>
+                        </div>
+                        <div onclick="appendNumber(5)" class="cursor-pointer bg-white rounded-lg flex justify-center items-center text-xl h-[6vh] font-bold">
+                            <p>5</p>
+                        </div>
+                        <div onclick="appendNumber(6)" class="cursor-pointer bg-white rounded-lg flex justify-center items-center text-xl h-[6vh] font-bold">
+                            <p>6</p>
+                        </div>
+                        <div onclick="appendOperator('+')" class="cursor-pointer bg-white rounded-lg flex justify-center items-center text-xl h-[6vh] font-bold">
+                            <p>+</p>
+                        </div>
+                        <div onclick="appendNumber(1)" class="cursor-pointer bg-white rounded-lg flex justify-center items-center text-xl h-[6vh] font-bold">
+                            <p>1</p>
+                        </div>
+                        <div onclick="appendNumber(2)" class="cursor-pointer bg-white rounded-lg flex justify-center items-center text-xl h-[6vh] font-bold">
+                            <p>2</p>
+                        </div>
+                        <div onclick="appendNumber(3)" class="cursor-pointer bg-white rounded-lg flex justify-center items-center text-xl h-[6vh] font-bold">
+                            <p>3</p>
+                        </div>
+                        <div onclick="appendOperator('-')" class="cursor-pointer bg-white rounded-lg flex justify-center items-center text-xl h-[6vh] font-bold">
+                            <p>-</p>
+                        </div>
+                        <div onclick="appendOperator('.')" class="cursor-pointer bg-white rounded-lg flex justify-center items-center text-xl h-[6vh] font-bold">
+                            <p>.</p>
+                        </div>
+                        <div onclick="appendNumber(0)" class="cursor-pointer bg-white rounded-lg flex justify-center items-center text-xl h-[6vh] font-bold">
+                            <p>0</p>
+                        </div>
+                        <div onclick="appendOperator('/')" class="cursor-pointer bg-white rounded-lg flex justify-center items-center text-xl h-[6vh] font-bold">
+                            <p>/</p>
+                        </div>
+                        <div onclick="appendOperator('*')" class="cursor-pointer bg-white rounded-lg flex justify-center items-center text-xl h-[6vh] font-bold">
+                            <p>x</p>
+                        </div>
+                    </div>
+                    <div class="flex mt-5 gap-3">
+                        <div onclick="calculatorReset()" class="cursor-pointer w-[50%] bg-white rounded-lg flex justify-center items-center text-xl h-[6vh] font-bold">
+                            <button>RESET</button>
+                        </div>
+                        <div onclick="calculator()" class="cursor-pointer w-[50%] bg-white rounded-lg flex justify-center items-center text-xl h-[6vh] font-bold">
+                            <p>=</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
